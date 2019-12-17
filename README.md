@@ -4,7 +4,7 @@
 
 * [TopoLVM](https://github.com/cybozu-go/topolvm) goes beyond what this project attempts to achieve. It dynamically provisions LVM-based volumes, implements the CSI interface, while accounting for each host total storage capacity.
 * [Sig-storage local static provisioner](https://github.com/kubernetes-sigs/sig-storage-local-static-provisioner) automatically creates static PersistentVolumes based on the devices available to each host.
-* [OpenEBS](https://github.com/openebs/openebs) is an advanced container attached storage solution for Kubernetes.
+* [OpenEBS](https://github.com/openebs/openebs) is an advanced container attached storage ([CAS](https://www.cncf.io/blog/2018/04/19/container-attached-storage-a-primer/)) solution for Kubernetes. OpenEBS provides pluggable architecture with different flavors of storage engines, one specially targets dynamic provisioning of local PV [OpenEBS LocalPV](https://docs.openebs.io/docs/next/localpv.html) with both hostpath, device mapping options as well as configuring local PVs backed by ZFS ([ZFS LocalPV](https://github.com/openebs/zfs-localpv)).
 
 **Important**: this is an experimental project, not intended for production use cases. There is no public Docker image release available.
 
